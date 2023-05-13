@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.fundo {
+    text-align: center;
+    font-size: 100%;
+    background-image: linear-gradient(45deg, #877c89, #efc2c2, #0b3364);
+    background-size: 500%, 500%;
+    animation: mymove ease 15s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        background-position: 0%, 50%;
+    }
+
+    50% {
+        background-position: 50%, 100%;
+    }
+
+    100% {
+        background-position: 0%, 50%;
+    }
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap:24px;
+}
+
+.cabecalho-logotipo {
+    height: 90px;
+    border-radius: 100px;
+}
+
+.cabecalho-item {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: space-around;
+}
+
+.conteudo {
+    border-top: 1px solid #d2bdda;
+    margin-bottom: 50px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'raleway', cursive;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'raleway', cursive;
+    font-weight: 400;
+
+}
+
+.conteudo-principal-bt {
+    background-color: #f3bc9a;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 4px 5px 4px rgba(144, 151, 159, 1);
+    font-family: 'raleway', cursive 700;
+    color: #1a395f;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 1px solid #d2bdda;
+    padding-top: 24px;
+    font-family: 'raleway', cursive;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'raleway', sans-serif, 300;
+    size: 18px;
+}
+
+.rodape {
+    border-top: 1px #877c89 solid;
+    padding: 14px;
+}
